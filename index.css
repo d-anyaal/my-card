@@ -1,0 +1,131 @@
+body {
+
+    height: 90vh;
+    display: flex;
+
+}
+
+.anim:hover {
+
+    transform: translateY(-2px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
+    cursor: default;
+}
+
+/* font-size: clamp(minimum, preferred, maximum); */
+.main h2 {
+    font-size: clamp(19px, 3.4vw, 32px);
+    /* cursor: auto; */
+    transition: all 350ms ease;
+}
+
+h2:hover {
+    color: blueviolet;
+}
+
+.pro {
+    font-size: clamp(13px, 1.7vw, 24px);
+    transition: all 350ms ease;
+    font-style: italic;
+}
+
+.pro:hover {
+    letter-spacing: 0.6px;
+}
+
+.div_left {
+    display: flex;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.pro2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(211, 209, 209);
+    border-radius: 5%;
+    margin: 2px;
+    writing-mode: sideways-rl;
+    font-size: clamp(9.8px, 1.4vw, 18px);
+    transition: all 400ms ease;
+    align-items: center;
+}
+
+.pro2:hover {
+    letter-spacing: 0.3px;
+}
+
+.main h3 {
+    font-size: clamp(16px, 2.2vw, 26px);
+    transition: all 350ms ease;
+}
+
+.location:hover {
+    color: blueviolet;
+}
+
+
+.main {
+    transition: all 350ms ease;
+    width: clamp(300px, 45vw, 600px);
+    margin: auto auto auto auto;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    background-color: #ddebf8;
+    border-bottom: 10px solid #d8cefe;
+    align-items: center;
+    padding: clamp(10px, 3vw, 20px);
+    border-radius: 10px;
+}
+
+/* 768px sy kam screen pr height jo pahly media query sy bahir hai wo rhy gi while 768px sy large screens pr height jo media query kky andr .main{} class me height set ki wo hojay gi */
+/* @media (min-width:768px) {
+    .main {
+        height: 250px;
+    }
+} */
+/* height ko khud sy set krna achi practice nhi hoti is liye hamny card ki height set nhi ki isko just padding d baki card ki height auto content ky according kam ya ziada hojay gi */
+
+.text_div {
+    color: #2b2839;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.profile_pic {
+    border-radius: 5%;
+    object-fit: cover;
+    transition: all 350ms ease;
+}
+
+.profile_pic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: clamp(125px, 18vw, 220px);
+}
+
+.profile_pic:hover {
+    /* transform: rotate(2deg); */
+    box-shadow: 0 0 20px rgba(0, 123, 255, 0.4);
+    /* cursor: pointer; */
+    transform: scale(1.01);
+
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(-70%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.anim {
+    animation: slideUp 2s ease forwards;
+}

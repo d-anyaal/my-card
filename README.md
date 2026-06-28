@@ -1,6 +1,6 @@
 # My Card – Responsive Animated Business Card
 
-A clean, modern, fully responsive, and user-friendly business card with smooth animations, built using pure HTML5 and CSS3.
+A clean, modern, fully responsive, and user-friendly business card with smooth animations, built using pure HTML5 and CSS3. It showcases responsive design, interactive hover effects, and modern UI principles.
 
 ## Features
 
